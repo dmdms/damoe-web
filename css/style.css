@@ -236,7 +236,7 @@ article h2 {
     height: 100px;
     padding: 50px;
     background: rgb(236, 230, 230);
-    overflow: hidden;
+    overflow: hidden scroll;
 }
 
 .outer-wrap {
