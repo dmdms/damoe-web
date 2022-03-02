@@ -238,6 +238,17 @@ article h2 {
     background: rgb(236, 230, 230);
     overflow: hidden scroll;
 }
+.userAgreement {
+    text-align: right;
+    margin-top: 10px;
+}
+.btns {
+    text-align: center;
+    margin-top: 50px;
+}
+.btns div {
+    display: inline-block;
+}
 
 .outer-wrap {
     border-top: 1px solid #ddd;
