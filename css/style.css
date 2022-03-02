@@ -1,0 +1,305 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+a, a:link {
+    text-decoration: none;
+    color: inherit;
+}
+.d-none {
+    display: none;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.blue600 { color: steelblue; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+body {
+    color: #000;
+    font-size: 14px;
+    font-family: 'Maven Pro', 'Noto Sans KR', sans-serif;
+    background: url(../images/bg.png) 0 0 repeat fixed;
+}
+
+.header-wrap {
+    width: 1000px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+.header-logo {
+    float: left;
+}
+.header-nav{
+    color: #666;
+    font-size: 18px;
+    font-weight: 500;
+    border-left : 1px solid #000;
+    float: left;
+    margin-left: 80px;
+    padding-left: 20px;
+}
+.header-nav li:hover {
+    color: #604449;
+}
+.links {
+    float: right;
+}
+.links li {
+    float: left;
+    margin-left: 7px;
+}
+
+.hero {
+    background: url('../images/visual_bg.jpg') no-repeat center / cover;
+    height: 400px;
+}
+.hero-wrap {
+    width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+#new {
+    position: absolute;
+    right: 0;
+    bottom: -80px;   
+}
+
+.subpage > h2, .subpage > h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.subpage > h2 {
+    margin-top: 100px;
+    font-size: 2rem;
+}
+.subpage > h3 {
+    font-size: 1rem;
+    color: lightgray;
+    font-weight: 300;
+}
+
+.article-wrap {
+    max-width: 1000px;
+    margin: 100px auto;
+    overflow: hidden;
+}
+.article-wrap article {
+    float: left;
+}
+article h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.theraphy-items li {
+    float: left;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    position: relative;
+}
+.theraphy-items li:hover {
+    border: 1px solid #604449;
+}
+.theraphy-items li:hover img {
+    transform: scale(1.2);
+}
+.overlay {
+    position: absolute;
+    background: rgba(0,0,0,.3);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: none;
+}
+.theraphy-items li:hover .overlay {
+    display: block;
+}
+.choice-btns {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: 60px;
+    margin-top: 160px;
+}
+.choice-btns div {
+    display: inline-block;
+}
+.cart {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 4px 5px;
+    margin-right: 5px;
+}
+.cart:hover {
+    border: 2px solid steelblue;
+}
+.cart:hover .material-icons.md-light {
+    color: steelblue;
+}
+.buy {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 4px 5px;
+}
+.buy:hover {
+    border: 2px solid steelblue;
+}
+.buy:hover .material-icons.md-light {
+    color: steelblue;
+}
+.theraphy-items li:hover img {
+    transition: all .3s;
+}
+.theraphy-items li:nth-child(1) {
+    margin-right: 21px;
+}
+.article-wrap article h2 {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.upper {
+    text-transform: uppercase;
+}
+.theraphy-items li:nth-child(2) {
+    margin-right: 22px;
+}
+
+.subpage .article-wrap article:nth-child(1) {
+    width: 100%;
+    overflow: hidden;
+}
+.user-form {
+    background: #916654;
+    color: white;    
+    padding: 50px;
+    box-sizing: border-box;
+}
+.user-form li {
+    margin-bottom: 20px;
+}
+.user-form label {
+    margin-right: 20px;
+    display: inline-block;
+    width: 70px;
+}
+.user-form input {
+    padding: 15px 0;
+    text-indent: 20px; /* 텍스트 들여쓰기 */
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+.user-form input:focus { /* 폼 요소 클릭시, 포커스 도달하면*/
+    background: lightgrey;
+}
+#userName, #userEmail, #userSns {
+    width: calc(100% - 150px);
+}
+#userAddress1 {
+    width: calc(100% - 254px);
+    margin-bottom: 20px;
+}
+#searchAddress { /* 검색버튼 */
+    width: 100px;
+    text-indent: 0;
+    padding: 14px 0;
+    vertical-align: top; /* 수직-정렬 : 윗쪽기준, 1) table 2) inline 요소 */
+    color: #fdfdfd;
+    background: #916654;
+    border: 2px solid white;
+    font-weight: 800;
+}
+#userAddress2 {
+    margin-left: 95px;
+    width: calc(100% - 254px);
+}
+.agreement-form > h3 {
+    margin-top: 80px;
+}
+.agreement {
+    border: 1px solid #a3a3a3;
+    height: 100px;
+    padding: 50px;
+    background: rgb(236, 230, 230);
+    overflow: hidden;
+}
+
+.outer-wrap {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.aside-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+.article-wrap::after { /*clearfix 기법*/
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.aside-wrap h3 {
+    float: left;
+    margin-right: 40px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+}
+.aside-wrap p {
+    float: right;
+    margin-right: 700px;
+    font-size: 14px;
+}
+.footer-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.etc {
+    margin: 70px 0 30px 0;
+}
+.etc li {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 20px;
+}
+address {
+    font-style: normal;
+}
+address .name, .call {
+    font-size: 14px;
+    color: #555;
+}
+p.copyright {
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #888;
+    text-transform: capitalize;
+}
+.footer-logo {
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+}
