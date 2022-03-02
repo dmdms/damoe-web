@@ -188,6 +188,7 @@ article h2 {
     color: white;    
     padding: 50px;
     box-sizing: border-box;
+    margin-top: 20px;
 }
 .user-form li {
     margin-bottom: 20px;
@@ -220,7 +221,7 @@ article h2 {
     padding: 14px 0;
     vertical-align: top; /* 수직-정렬 : 윗쪽기준, 1) table 2) inline 요소 */
     color: #fdfdfd;
-    background: #916654;
+    background: #72574b;
     border: 2px solid white;
     font-weight: 800;
 }
@@ -237,17 +238,43 @@ article h2 {
     padding: 50px;
     background: rgb(236, 230, 230);
     overflow: hidden scroll;
+    margin-top: 20px;
+}
+#userAgreement {
+    margin-left: 10px;
 }
 .userAgreement {
     text-align: right;
-    margin-top: 10px;
+    margin-top: 20px;
+    font-size: larger;
 }
 .btns {
     text-align: center;
-    margin-top: 50px;
-}
+    margin: 100px 0 50px 0;}
 .btns div {
     display: inline-block;
+}
+.btns input:hover {
+    background-color: #916654;
+    color: white;
+}
+.submit {
+    padding: 5px 30px;
+    border: 3px solid #916654;
+    border-radius: 50px;
+    margin-right: 5px;
+    font-weight: bolder;
+    background: white;
+    color: #604449;
+}
+.reset {
+    padding: 5px 30px;
+    border: 3px solid #916654;
+    border-radius: 50px;
+    margin-left: 5px;
+    font-weight: bolder;
+    background: white;
+    color: #604449;
 }
 
 .outer-wrap {
