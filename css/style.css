@@ -60,7 +60,8 @@ body {
     margin-left: -500px;
     margin-top: -300px;
 }
-.close-modal {
+.close-modal { /*a 태그 아닌데 손가락 커서 넣고 싶을 때*/
+    cursor: pointer;
     font-size: 2rem;
     position: absolute;
     right: 5%;
