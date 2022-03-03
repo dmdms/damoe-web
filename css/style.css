@@ -240,18 +240,39 @@ article h2 {
     overflow: hidden scroll;
     margin-top: 20px;
 }
-#userAgreement {
-    margin-left: 10px;
-}
 .userAgreement {
     text-align: right;
     margin-top: 20px;
     font-size: larger;
 }
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
 .btns {
     text-align: center;
     margin: 100px 0 10px 0;
 }
+/* .btns input[type=submit] {
+    background: red;
+    color: white;
+    width: 250px;
+    height: 70px;
+    font-size: 1.250rem;
+    border: 0;
+}
+. btns input[type=reset] {
+    background: #fff;
+    color: #666;
+    width: 250px;
+    height: 70px;
+    font-size: 1.250rem;
+    border: 1px solid #fff;
+} */
 .btns div {
     display: inline-block;
 }
