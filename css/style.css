@@ -36,6 +36,50 @@ body {
     background: url(../images/bg.png) 0 0 repeat fixed;
 }
 
+#modal.show { /*스크립트로 show, hide 제어하기 위한 스타일*/
+    display: block;
+}
+#modal {
+    transition: all 3s;
+    display: none;
+    z-index: 2000;
+    position: fixed;
+    background: rgba(0,0,0,.3); /* Red, Green, Blue, Alpha*/
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.modal-wrap {
+    position: absolute;
+    background: white;
+    width: 1000px;
+    height: 600px;
+    left: 50%;
+    top: 50%;
+    margin-left: -500px;
+    margin-top: -300px;
+}
+.close-modal {
+    font-size: 2rem;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    color: #916654;
+}
+.modal-title h3 {
+    font-size: 30px;
+}
+.modal-title h2 {
+    font-size: 16px;
+    color: #666;
+}
+.modal-title {
+    border-left: 2px solid #666;
+    padding-left: 20px; 
+    margin: 20px 0 0 30px;
+}
+
 .header-wrap {
     width: 1000px;
     margin: 50px auto;
