@@ -81,6 +81,68 @@ body {
     margin: 20px 0 0 30px;
 }
 
+.cs-wrap {
+    position: absolute;
+    background: rgb(94, 65, 65);
+    width: 700px;
+    height: 400px;
+    left: 50%;
+    top: 50%;
+    margin-left: -350px;
+    margin-top: -190px;
+}
+.modal-cs {
+    text-align: center;
+    color: white;
+}
+.modal-cs label {
+    margin-right: 20px;
+    display: inline-block;
+    width: 70px;
+}
+#cs-title, #cs-name, #cs-email {
+    width: 460px;
+    padding: 5px 0 5px 0;
+    margin-left: 20px;
+}
+#cs-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#cs-name, #cs-email {
+    margin-bottom: 20px;
+}
+#cs-ask {
+    width: 460px;
+    padding: 5px 0 150px 0;
+    margin-left: 20px;
+    margin-top: 20px;
+    overflow: hidden scroll;
+}
+.cs-btns {
+    margin: 50px 10px 0 0;
+    text-align: center;
+}
+.cs-submit, .cs-reset {
+    border: 2px solid rgb(94, 65, 65);
+    background: white;
+    border-radius: 30px;
+    padding: 5px 20px;
+    color: rgb(94, 65, 65);
+    font-weight: bolder;
+    cursor: pointer;
+}
+.cs-submit {
+    margin-right: 5px;
+}
+.cs-reset {
+    margin-left: 5px;
+}
+.cs-submit:hover, .cs-reset:hover {
+    background: rgb(94, 65, 65);
+    color: white;
+}
+
 .header-wrap {
     width: 1000px;
     margin: 50px auto;
